@@ -1,6 +1,7 @@
+
 /* Variables (replaced with actual values) */
 :root {
-  --red: #ad0000;
+  --bl: #AAD6F4;
 }
 
 /* Typography */
@@ -12,7 +13,9 @@ body {
   font-family: 'Open sans', sans-serif;
   font-weight: bold;
 }
-
+header {
+  background-color: #7A8C99;
+}
 .navbar a,
 .sec-about p {
   text-align: center;
@@ -98,9 +101,13 @@ a {
 hr {
   margin-bottom: 3em;
   width: 7%;
+  border-color: black;
 }
 
 /* Layout */
+.sec-folio {
+  background-color: #C9D6DF;
+}
 .sec-folio .row {
   margin-bottom: 3em;
 }
@@ -111,7 +118,9 @@ hr {
 
 /* Header */
 .navbar-default {
-  background: #fff;
+  background-color: #6C8199;
+  border: 0;
+  color: white;
 }
 
 .navbar .fa-external-link {
@@ -120,11 +129,15 @@ hr {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: var(--red);
+  color: var(--bl);
 }
 
 .navbar-default .navbar-nav > li > a:active {
-  color: #8b0000; /* Darken function replacement */
+  color: #AAD6F4; /* Darken function replacement */
+}
+
+.collapse .navbar-collapse {
+  color: white;
 }
 
 /* Main */
@@ -157,7 +170,9 @@ hr {
   height: 40px;
   color: #fff;
 }
-
+.sec-about {
+  background-color: #C9D6DF;
+}
 /* About */
 .sec-about a {
   color: #000;
@@ -165,12 +180,12 @@ hr {
 
 .sec-about a:hover,
 .sec-about a:focus {
-  color: var(--red);
+  color: var(--bl);
 }
 
 /* Services */
 .sec-services {
-  background: #f9f9f9;
+  background: #BECED8;
 }
 
 .sec-services i {
@@ -193,18 +208,21 @@ hr {
 
 /* Testimonials */
 .sec-testimonials {
-  background: #f9f9f9;
+  background: #BECED8;
 }
 
 /* Contact */
+.sec-contact {
+  background-color: #C9D6DF;
+}
 .sec-contact .form-control:focus {
-  border-color: var(--red);
+  border-color: var(--bl);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
 }
 
 .sec-contact .btn {
   padding: 0.5rem 1.75rem;
-  background: #000;
+  background: #96A8B6;
   font-size: 0.95rem;
   color: #fff;
   transition: all 0.25s;
@@ -212,13 +230,13 @@ hr {
 
 .sec-contact .btn:hover,
 .sec-contact .btn:focus {
-  background: var(--red);
-  border-color: #8b0000; /* Darken function replacement */
+  background: var(--bl);
+  border-color: #AAD6F4; /* Darken function replacement */
 }
 
 /* Footer */
 footer {
-  background: #000;
+  background: #6C8199;
 }
 
 .soc-media-ul {
@@ -242,5 +260,20 @@ footer {
 
 .soc-media-ul a:hover,
 .soc-media-ul a:focus {
-  color: var(--red);
+  color: var(--bl);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+.navbar-default .navbar-brand {
+  color: #C9D6DF;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #C9D6DF;
+}
+
+#quotes, #hi {
+  color: #494E5D;
 }
